@@ -25,7 +25,8 @@ export default {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-size: $fs-4;
+  font-size: $fs-default;
+  font-weight: $fw-default;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
