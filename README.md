@@ -4,6 +4,8 @@
 
 ### 0.2: Building Components
 
+#### 0.2.4: Icons imported dynamically into MainFooter
+
 #### 0.2.3: Created Placeholder PageMain
 
 #### 0.2.2: Basic Styling of PageHeader

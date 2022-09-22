@@ -4,12 +4,19 @@
         <p class="placeholder-content">Content Goes Here</p>
         <p class="coming-soon">Coming Soon...</p>
     </div>
+
+    <MainFooter /> 
 </main>
 </template>
 
 <script>
+import MainFooter from "./MainFooter.vue";
+
 export default {
     name: "PageMain",
+    components: {
+        MainFooter,
+    }
 }
 </script>
 
