@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.visually-hidden {
+    position: absolute;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: $max-container;
+    padding: 0 $padding-x;
+    margin: 0 auto;
+}
+
+// FONT SIZES
+.fs-1 { font-size: $fs-1; }
+
+.fs-2 { font-size: $fs-2; }
+
+.fs-3 { font-size: $fs-3; }
+
+.fs-4 { font-size: $fs-4; }
+
+.fs-5 { font-size: $fs-5; }
+
+.fs-6 { font-size: $fs-6; }
+
+
