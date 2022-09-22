@@ -3,17 +3,20 @@
     <!-- HEADER -->
     <PageHeader />
     <!-- MAIN -->
+    <PageMain />
     <!-- FOOTER -->
   </div>
 </template>
 
 <script>
 import PageHeader from './components/PageHeader.vue';
+import PageMain from './components/PageMain.vue';
 
 export default {
   name: 'App',
   components: {
-    PageHeader
+    PageHeader,
+    PageMain
 }
 }
 </script>
