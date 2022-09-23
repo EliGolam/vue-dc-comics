@@ -4,6 +4,10 @@
 
 ### 0.2: Building Components
 
+#### 0.2.6: Dynamically added footer Lints
+
+* Minimal coding used
+
 #### 0.2.5: Added MainFooter Icons hover animation
 
 #### 0.2.4: Icons imported dynamically into MainFooter

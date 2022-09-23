@@ -1,12 +1,11 @@
 <template>
-<footer class="main-footer">
+<footer class="shop">
     <div class="container">
         <div class="icon-container">
             <figure class="icon" v-for="icon in icons" :key="icon" >
-                <img :src="`${publicPath}${getIcon(icon)}`" :alt="getIconDescription(icon)">
+                <a href=""><img :src="`${publicPath}${getIcon(icon)}`" :alt="getIconDescription(icon)" /></a>
                 <figcaption>{{getIconDescription(icon)}}</figcaption>
             </figure>
-
         </div>
     </div>
 </footer>  
@@ -14,7 +13,7 @@
 
 <script>
 export default {
-    name: "MainFooter",
+    name: "ShopDC",
 
     data() {
         return {
@@ -30,7 +29,7 @@ export default {
     methods: {
         getIcon(icon) {
             const source = (this.IMG_PATH + this.IMG_PREFIX + icon + this.IMG_FORMAT);
-            // console.log("Test MainFooter Icon Sources: ", source);
+            // console.log("Test ShopDC Icon Sources: ", source);
             return source;
         }, 
 
@@ -54,7 +53,7 @@ export default {
 @import "../styles/variables.scss";
 
 
-.main-footer {
+.shop {
     background-color: $clr-primary;
 }
 

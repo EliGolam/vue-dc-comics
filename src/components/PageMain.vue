@@ -5,17 +5,17 @@
         <p class="coming-soon">Coming Soon...</p>
     </div>
 
-    <MainFooter /> 
+    <ShopDC /> 
 </main>
 </template>
 
 <script>
-import MainFooter from "./MainFooter.vue";
+import ShopDC from "./ShopDC.vue";
 
 export default {
     name: "PageMain",
     components: {
-        MainFooter,
+        ShopDC,
     }
 }
 </script>
