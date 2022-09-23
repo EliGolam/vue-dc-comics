@@ -45,6 +45,7 @@ export default {
 
     created() {
         this.navTitles = this.getTitles();
+        console.log("TEST PAGE FOOTER PROPS", this.socials);
     }
 }
 

@@ -55,6 +55,10 @@ export default {
             return alt.join(" ");
         },
     },
+
+    mounter() {
+        console.log("Test Social LINKS", this.socialLinks);
+    }
     
 }
 </script>
