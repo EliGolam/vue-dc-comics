@@ -1,6 +1,7 @@
 <template>
 <footer>
     <div class="container footer-body">
+
         <div class="navigation">
             <h2 class="visually-hidden">Bottom Page Navigation</h2>
 
@@ -8,16 +9,19 @@
                 :navTitle="title" 
                 :navList="navLinks[title]"/>
         </div>
+
         <img src="../assets/img/dc-logo-bg.png" alt="">
     </div>
 
     <FooterEnd :socialLinks="socials"/>
+
 </footer>  
 </template>
 
 <script>
 import NavList from '@/utility-components/NavList.vue';
-import FooterEnd from './FooterEnd.vue';
+import FooterEnd from '@/utility-components/FooterEnd.vue';
+
 
 export default {
     name: "PageFooter",
@@ -45,14 +49,14 @@ export default {
 
     created() {
         this.navTitles = this.getTitles();
-        console.log("TEST PAGE FOOTER PROPS", this.socials);
     }
 }
-
 </script>
+
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+
 
 footer {
     $height: 25rem;

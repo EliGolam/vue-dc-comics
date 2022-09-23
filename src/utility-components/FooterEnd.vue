@@ -8,10 +8,10 @@
         </div>
 
         <div class="socials">
-            <IconLink v-for="icon in icons" :key="icon" 
-                :link="'#'"
-                :logoPath="`${getIcon(icon)}`"
-                :description="getIconDescription(icon)"
+            <IconLink v-for="social in socialLinks" :key="social.name" 
+                :link="social.link"
+                :logoPath="getIcon(social.name)"
+                :description="getIconDescription(social.name)"
             />
         </div>
     </div>
@@ -21,10 +21,11 @@
 <script>
 import IconLink from '@/utility-components/IconLink.vue';
 
+
 export default {
     name: "FooterEnd",
-    components: { 
-        IconLink, 
+    components: {
+        IconLink,
     },
 
     props: {
@@ -37,13 +38,13 @@ export default {
             IMG_FORMAT: ".png",
             IMG_PATH: "assets/img/",
             IMG_PREFIX: "footer-",
-            icons: ["facebook", "twitter", "youtube", "pinterest", "periscope"],
         };
     },
+
     methods: {
         getIcon(icon) {
             const source = (this.IMG_PATH + this.IMG_PREFIX + icon + this.IMG_FORMAT);
-            // console.log("Test ShopDC Icon Sources: ", source);
+            
             return this.publicPath + source;
         },
 
@@ -55,16 +56,13 @@ export default {
             return alt.join(" ");
         },
     },
-
-    mounter() {
-        console.log("Test Social LINKS", this.socialLinks);
-    }
-    
 }
 </script>
 
+<!-- STYLE -->
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+
 
 .footer-end {
     background-color: $clr-secondary;

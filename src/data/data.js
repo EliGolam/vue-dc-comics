@@ -158,23 +158,23 @@ const DATA_FOOTER_LINKS = {
 
 const DATA_SOCIAL_LINKS = [
     {
-        social: "facebook",
+        name: "facebook",
         link: "#",
     },
     {
-        social: "twitter",
+        name: "twitter",
         link: "#",
     },
     {
-        social: "youtube",
+        name: "youtube",
         link: "#",
     },
     {
-        social: "pinterest",
+        name: "pinterest",
         link: "#",
     },
     {
-        social: "periscope",
+        name: "periscope",
         link: "#",
     },
 ]
