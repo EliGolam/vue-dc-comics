@@ -4,6 +4,8 @@
 
 ### 0.3 Dynamically added Data
 
+#### 0.3.4: Added Comics Data
+
 #### 0.3.3: Fixed Bug with Data to FooterEnd
 
 #### 0.3.2: Added Data to PageHeader

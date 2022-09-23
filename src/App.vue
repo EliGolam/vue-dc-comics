@@ -33,6 +33,7 @@ export default {
       headerLinks: DATA.headerLinks,
       footerLinks: DATA.footerLinks,
       socialLinks: DATA.socialLinks,
+      comicsData: DATA.comics,
     }
   }
 }

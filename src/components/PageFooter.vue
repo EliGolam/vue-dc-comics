@@ -63,7 +63,7 @@ footer {
 
     background: url("../assets/img/footer-bg.jpg");
     color: $clr-light;
-
+    overflow: hidden;
     position: relative;
         z-index: 0;
 
