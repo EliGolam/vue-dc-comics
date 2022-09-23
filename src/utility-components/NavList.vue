@@ -4,7 +4,7 @@
 
     <ul class="nav-list">
         <li v-for="link in navList" :key="link" class="nav-item">
-            <a href="#">{{ link }}</a>
+            <a :href="link.link">{{ link.name }}</a>
         </li>
     </ul>
 </nav>
@@ -27,6 +27,7 @@ export default {
 
 .nav-item {
     color: rgba($clr-light, .5);
+    cursor: hover;
 
     @media (hover: hover) {
         &:hover {

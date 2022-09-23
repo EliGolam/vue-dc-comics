@@ -2,6 +2,8 @@
 
 ## Versions
 
+### 0.3 Dynamically added Data
+
 ### 0.2: Building Components
 
 #### 0.2.6: Dynamically added footer Lints

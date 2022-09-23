@@ -1,45 +1,45 @@
 <template>
 <footer>
-    <div class="container">
+    <div class="container footer-body">
         <div class="navigation">
             <h2 class="visually-hidden">Bottom Page Navigation</h2>
 
             <NavList v-for="title in navTitles" :key="title" 
                 :navTitle="title" 
-                :navList="navElements[title]"/>
+                :navList="navLinks[title]"/>
         </div>
-
         <img src="../assets/img/dc-logo-bg.png" alt="">
     </div>
+
+    <FooterEnd :socialLinks="socials"/>
 </footer>  
 </template>
 
 <script>
-import NavList from './NavList.vue';
-
+import NavList from '@/utility-components/NavList.vue';
+import FooterEnd from './FooterEnd.vue';
 
 export default {
     name: "PageFooter",
     components: {
-    NavList,
-},
+        NavList,
+        FooterEnd
+    },
+
+    props: {
+        navLinks: Object,
+        socials: Array,
+    },
 
     data () {
         return {
-            navElements: {
-                "DC Comics": ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
-                SHOP: ["Shop DC", "Shop DC Collectibles"],
-                DC: ["Terms of Use", "Privacy Policy (New)", "Ad Choices", "Adverstising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
-                SITES: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
-
-            }, 
             navTitles: undefined,
         }
     },
 
     methods: {
         getTitles() {
-            return Object.keys( this.navElements );
+            return Object.keys( this.navLinks );
         }
     },
 
@@ -47,24 +47,26 @@ export default {
         this.navTitles = this.getTitles();
     }
 }
+
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 
 footer {
-    $height: 20rem;
+    $height: 25rem;
 
     background: url("../assets/img/footer-bg.jpg");
     color: $clr-light;
-    display: flex;
-    align-items: flex-start;
-    padding: 3rem 0;
 
     position: relative;
-    overflow: hidden;
-    
+        z-index: 0;
 
+    .footer-body {
+        overflow: hidden;
+        padding: 3rem 0;
+    }
+    
     .navigation {
         display: flex;
         flex-direction: column;
@@ -80,6 +82,7 @@ footer {
         position: absolute;
             top: -6rem;
             right: 0;
+            z-index: -1;
     }
 }
 </style>

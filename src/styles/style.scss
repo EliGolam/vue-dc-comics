@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap');  
+@import "@/styles/variables.scss";
+@import "@/styles/personal-reset.scss";
+@import "@/styles/utilties.scss";
+
+#app {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-size: $fs-default;
+  font-weight: $fw-default;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+
+}

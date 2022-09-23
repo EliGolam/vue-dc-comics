@@ -1,12 +1,14 @@
 <template>
 <footer class="shop">
     <div class="container">
+
         <div class="icon-container">
             <figure class="icon" v-for="icon in icons" :key="icon" >
                 <a href=""><img :src="`${publicPath}${getIcon(icon)}`" :alt="getIconDescription(icon)" /></a>
                 <figcaption>{{getIconDescription(icon)}}</figcaption>
             </figure>
         </div>
+        
     </div>
 </footer>  
 </template>
