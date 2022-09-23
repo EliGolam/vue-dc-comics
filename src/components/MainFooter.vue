@@ -56,18 +56,59 @@ export default {
 
 .main-footer {
     background-color: $clr-primary;
-    padding: 2rem;
 }
 
 .icon-container {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
+    // FLEX item
+    width: calc(100% / 4);
 
-    color: $clr-light;
+    // FLEX container
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+    cursor: pointer;
+
+    // ANIMATIONS
+    transition: transform 200ms ease;
+
+    img {
+        max-height: 4rem;
+        width: auto;
+    }
+
+    figcaption {
+        color: $clr-light;
+        font-size: $fs-5;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+           transform: scale(1.03) translateY(-20px);
+        }
+        
+    }
+
+    // MEDIA SCREEN BREAKPOINTS
+    @media only screen and (min-width: $lg-breakpoint) {
+        flex-direction: row;
+
+        img {
+            max-height: 6rem;
+        }
+
+        figcaption {
+            font-size: $fs-4;
+        }
+    }
 }
+
+
 </style>
