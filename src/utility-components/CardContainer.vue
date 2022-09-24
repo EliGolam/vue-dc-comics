@@ -5,6 +5,7 @@
         :cardBody="getBody(index)"
         :cardImg="getImage(card)"
         :cardAlt="getDescription(index)"
+        class="card"
         />
 </div>
 </template>
@@ -49,6 +50,35 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../styles/variables.scss";
+
+.card-container {
+    $r-gap: 3.5rem;
+    $c-gap: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: $r-gap;
+    column-gap: $c-gap;
+
+    margin-bottom: 5rem;
+
+    .card {
+        width: calc(100% / 2 - $c-gap);
+        aspect-ratio: 1 / 1.5;
+
+        @media only screen and (min-width: $sm-breakpoint) {
+            width: calc(100% / 3 - $c-gap);
+        }
+
+        @media only screen and (min-width: $md-breakpoint) {
+            width: calc(100% / 6 - $c-gap);
+        }
+    }
+}
+
+
+
 
 </style>

@@ -2,6 +2,10 @@
 
 ## Versions
 
+### 0.4 Adding UX
+
+#### 0.4.1: Added Hover animation on cards
+
 ### 0.3 Dynamically added Data
 
 #### 0.3.5: Added Cover Arts
