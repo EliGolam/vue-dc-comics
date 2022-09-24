@@ -5,17 +5,25 @@
         <p class="coming-soon">Coming Soon...</p>
     </div>
 
+    <CardContainer :cardsData="comics" />
+
     <ShopDC /> 
 </main>
 </template>
 
 <script>
 import ShopDC from "./ShopDC.vue";
+import CardContainer from "@/utility-components/CardContainer.vue";
 
 export default {
     name: "PageMain",
     components: {
         ShopDC,
+        CardContainer,
+    },
+
+    props: {
+        comics: Array,
     }
 }
 </script>

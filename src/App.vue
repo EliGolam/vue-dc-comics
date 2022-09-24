@@ -3,7 +3,7 @@
     <!-- HEADER -->
     <PageHeader :navLinks="headerLinks" />
     <!-- MAIN -->
-    <PageMain />
+    <PageMain :comics="comicsData" />
     <!-- FOOTER -->
     <PageFooter :navLinks="footerLinks" :socials="socialLinks"/>
   </div>
@@ -35,6 +35,10 @@ export default {
       socialLinks: DATA.socialLinks,
       comicsData: DATA.comics,
     }
+  },
+
+  mounted() {
+    console.log(this.comicsData);
   }
 }
 </script>

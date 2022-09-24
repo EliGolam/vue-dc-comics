@@ -4,6 +4,8 @@
 
 ### 0.3 Dynamically added Data
 
+#### 0.3.5: Added Cover Arts
+
 #### 0.3.4: Added Comics Data
 
 #### 0.3.3: Fixed Bug with Data to FooterEnd
