@@ -44,6 +44,8 @@ export default {
     background-size: cover;
     position: relative;
     cursor: pointer;
+
+    transition: transform 200ms ease-in;
     
     .overlay {
         position: absolute;
@@ -92,6 +94,8 @@ export default {
     
 
     &:hover {
+        transform: scale(1.05);
+
         .overlay {
             height: 40%;
         }
@@ -104,7 +108,7 @@ export default {
             line-height: 1.5em;
             height: 3em;
             white-space: normal;
-            overflow: hidden;
+             
         }
 
         .cardBody {

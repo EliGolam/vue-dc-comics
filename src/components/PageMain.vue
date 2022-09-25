@@ -1,8 +1,8 @@
 <template>
 <main class="page-main">
-    <div class="placeholder container">
-        <p class="placeholder-content">Content Goes Here</p>
-        <p class="coming-soon">Coming Soon...</p>
+    
+    <div class="hero-bg">
+        <img class="" src="../assets/img/jumbotron.jpg" alt="Teen Titans">
     </div>
 
     <CardContainer :cardsData="comics" />
@@ -65,5 +65,17 @@ export default {
 
 .page-main {
     background-color: $clr-secondary;
+}
+
+.hero-bg {
+    height: 30rem;
+    overflow: hidden;
+    
+    img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+    }
 }
 </style>

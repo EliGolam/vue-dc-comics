@@ -4,6 +4,8 @@
 
 ### 0.4 Adding UX
 
+#### 0.4.2: Added Information on screen for easier readability
+
 #### 0.4.1: Added Hover animation on cards
 
 ### 0.3 Dynamically added Data

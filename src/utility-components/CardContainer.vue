@@ -1,5 +1,8 @@
 <template>
-<div class="container card-container">
+<section class="container card-container">
+
+    <h2 class="section-title">Current Series</h2>
+
     <CardItem v-for="(card,index) in cardsData" :key="index"
         :cardTitle="card.series"
         :cardBody="getBody(index)"
@@ -7,7 +10,7 @@
         :cardAlt="getDescription(index)"
         class="card"
         />
-</div>
+</section>
 </template>
 
 <script>
@@ -62,7 +65,18 @@ export default {
     row-gap: $r-gap;
     column-gap: $c-gap;
 
-    margin-bottom: 5rem;
+    margin: 5rem auto;
+    position: relative;
+
+    .section-title {
+        position: absolute;
+        top: -5rem;
+        transform: translateY(-50%);
+        background-color: $clr-primary;
+        padding: .2rem .8rem;
+        border-radius: .3em;
+        color: $clr-light;
+    }
 
     .card {
         width: calc(100% / 2 - $c-gap);
